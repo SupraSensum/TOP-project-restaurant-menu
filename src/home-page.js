@@ -12,7 +12,7 @@ export default function() {
 
     // create headline
     const headline = document.createElement("h1");
-    headline.textContent = "Escape to Tranquility: A Hidden Beachside Dining Escapade"
+    headline.textContent = "Escape to Tranquility: A Hidden Beachside Dining Haven"
 
     // create some text
     const someText = document.createElement("p");
