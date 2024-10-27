@@ -1,13 +1,18 @@
 # TOP-project-restaurant-menu
 
-## Current Best Practice to Keep `gh-pages` up to date with `main`
+### Current Best Practice to Keep `gh-pages` up to date with `main`
 
-1. Checkout `gh-pages`
-    ```
-    git checkout gh-pages
-    ```
-2. Commit your work. I like to use this npm script
+_Make sure to read the npm scripts themselves so you're not flying blind_
+
+1. Commit your work on `main`. I like to use this npm script to do it all in one shot:
     ```
     npm run addCommitPush
     ```
-3. 
+3. Run this script that will:
+    1. Checkout `gh-pages`
+    2. Merge `main` into `gh-pages`
+    3. Bundle into `dist`
+    4. Add, commit && push just `dist` into `gh-pages`
+    ```
+    npm run deployPages
+    ```
