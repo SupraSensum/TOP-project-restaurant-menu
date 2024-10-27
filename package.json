@@ -9,7 +9,7 @@
     "devBuild": "webpack --config webpack.dev.js",
     "dev": "webpack serve --config webpack.dev.js",
     "mergeMain": "git merge main --no-edit",
-    "deployPages": "",
+    "deployPages": "npm run build && git add dist -f && git commit -m 'Deployment commit' && git subtree push --prefix dist origin gh-pages",
     "addCommitPush": "git add . && git commit && git push",
     "fukmi": "echo \"fukmi\" && npm run fukyu",
     "fukyu": "echo \"fukyu\" && npm run fukmi",
