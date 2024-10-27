@@ -8,11 +8,13 @@ _Make sure to read the npm scripts themselves so you're not flying blind_
     ```
     npm run addCommitPush
     ```
-3. Run this script that will:
-    1. Checkout `gh-pages`
-    2. Merge `main` into `gh-pages`
-    3. Bundle into `dist`
-    4. Add, commit && push just `dist` into `gh-pages`
+1. Checkout `gh-pages` and merge `main`
+    ```
+    git checkout gh-pages && git merge main --no-edit
+    ```
+1. Run this script that will:
+    1. Bundle into `dist`
+    1. Add, commit && push just `dist` into `gh-pages`
     ```
     npm run deployPages
     ```
